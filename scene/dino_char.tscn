@@ -1,23 +1,8 @@
-[gd_scene load_steps=23 format=3 uid="uid://gjn25p1acon7"]
+[gd_scene load_steps=24 format=3 uid="uid://gjn25p1acon7"]
 
+[ext_resource type="Script" path="res://scene/dino_char.gd" id="1_8xq7u"]
 [ext_resource type="Texture2D" uid="uid://lfxj21nfhuh3" path="res://dinosheets/Dino-red- mort.png" id="1_34fqi"]
-[ext_resource type="AudioStream" uid="uid://bkje3alw7ctvs" path="res://jump.wav" id="2_tk78j"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gyopd"]
-atlas = ExtResource("1_34fqi")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bgmmp"]
-atlas = ExtResource("1_34fqi")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e1hbk"]
-atlas = ExtResource("1_34fqi")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j8ffy"]
-atlas = ExtResource("1_34fqi")
-region = Rect2(72, 0, 24, 24)
+[ext_resource type="AudioStream" uid="uid://bkje3alw7ctvs" path="res://sound/jump.wav" id="2_tk78j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nq72q"]
 atlas = ExtResource("1_34fqi")
@@ -42,6 +27,22 @@ region = Rect2(528, 0, 24, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_1rj55"]
 atlas = ExtResource("1_34fqi")
 region = Rect2(552, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyopd"]
+atlas = ExtResource("1_34fqi")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgmmp"]
+atlas = ExtResource("1_34fqi")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1hbk"]
+atlas = ExtResource("1_34fqi")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8ffy"]
+atlas = ExtResource("1_34fqi")
+region = Rect2(72, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4mv6l"]
 atlas = ExtResource("1_34fqi")
@@ -75,23 +76,6 @@ region = Rect2(216, 0, 24, 24)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gyopd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bgmmp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e1hbk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j8ffy")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_nq72q")
 }, {
 "duration": 1.0,
@@ -111,6 +95,23 @@ animations = [{
 }],
 "loop": true,
 "name": &"duck",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyopd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgmmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1hbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8ffy")
+}],
+"loop": true,
+"name": &"idle",
 "speed": 10.0
 }, {
 "frames": [{
@@ -152,14 +153,15 @@ size = Vector2(15, 17.125)
 size = Vector2(18.125, 15.125)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
 scale = Vector2(8, 8)
+script = ExtResource("1_8xq7u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_1uykl")
-animation = &"duck"
-autoplay = "Idle"
-frame_progress = 0.761848
+animation = &"idle"
+autoplay = "idle"
 
 [node name="runcoll" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 0.5625)
