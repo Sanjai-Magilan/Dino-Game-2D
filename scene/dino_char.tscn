@@ -171,6 +171,6 @@ shape = SubResource("RectangleShape2D_e1ame")
 position = Vector2(3.0625, 1.5625)
 shape = SubResource("RectangleShape2D_t54ip")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="jumpSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_tk78j")
 volume_db = -25.0
