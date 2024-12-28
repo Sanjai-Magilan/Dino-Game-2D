@@ -4,6 +4,7 @@ A Superior Version of the Google Dinosaur Game 🦖🎮
 You know that cute little dinosaur you play with when your Wi-Fi decides to take a coffee break? Forget it. This is the next level. Built with a sprinkle of inspiration (and a hefty dose of tutorial-watching), this game is everything you didn’t know you needed. Sure, I followed a tutorial and gave credit where it's due, but hey—small tweaks, big upgrades!
 
 How to Run This Masterpiece:
+
 1.Install Godot
   Make sure you have Godot 4.3 or any version higher than 4.0. If you don’t, what are you even doing here?
 
