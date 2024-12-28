@@ -8,7 +8,11 @@
 
 [node name="bg" type="ParallaxBackground"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer5"]
 texture = ExtResource("1_kqhoq")
 centered = false
 
