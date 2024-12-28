@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcf17rfkue81p"
-path="res://.godot/imported/jungle tileset.png-910fef13bc5838d5f668304e2ec53d87.ctex"
+uid="uid://crsrssmm3128"
+path="res://.godot/imported/barrel.png-099b15710c5ebefc77190fdbfa68fd1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://jungle/jungle tileset.png"
-dest_files=["res://.godot/imported/jungle tileset.png-910fef13bc5838d5f668304e2ec53d87.ctex"]
+source_file="res://obstacles/barrel.png"
+dest_files=["res://.godot/imported/barrel.png-099b15710c5ebefc77190fdbfa68fd1f.ctex"]
 
 [params]
 

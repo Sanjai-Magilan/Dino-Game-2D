@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgk63kjp0tr1j"]
+
+[ext_resource type="FontFile" uid="uid://c48sj52h7np4d" path="res://font/Retro Gaming.ttf" id="1_fbcoh"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 151.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("1_fbcoh")
+theme_override_font_sizes/font_size = 40
+text = "Score:"
+horizontal_alignment = 1
+
+[node name="StartLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_fbcoh")
+theme_override_font_sizes/font_size = 40
+text = "press uparrow key to play"
+
+[node name="HighScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -269.0
+offset_bottom = 51.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_fbcoh")
+theme_override_font_sizes/font_size = 40
+text = "HighScore:"

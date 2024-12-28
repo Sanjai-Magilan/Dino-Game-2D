@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scene/dino_char.gd" id="1_8xq7u"]
 [ext_resource type="Texture2D" uid="uid://lfxj21nfhuh3" path="res://dinosheets/Dino-red- mort.png" id="1_34fqi"]
-[ext_resource type="AudioStream" uid="uid://bkje3alw7ctvs" path="res://sound/jump.wav" id="2_tk78j"]
+[ext_resource type="AudioStream" uid="uid://bkje3alw7ctvs" path="res://sounds/jump.wav" id="2_tk78j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nq72q"]
 atlas = ExtResource("1_34fqi")
@@ -147,10 +147,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e1ame"]
-size = Vector2(15, 17.125)
+size = Vector2(12.25, 17.125)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t54ip"]
-size = Vector2(18.125, 15.125)
+size = Vector2(12.75, 15.125)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 1
@@ -164,13 +164,13 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="runcoll" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 0.5625)
+position = Vector2(0.125, 0.5625)
 shape = SubResource("RectangleShape2D_e1ame")
 
 [node name="duckcoll" type="CollisionShape2D" parent="."]
-position = Vector2(3.0625, 1.5625)
+position = Vector2(0.375, 1.5625)
 shape = SubResource("RectangleShape2D_t54ip")
 
 [node name="jumpSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_tk78j")
-volume_db = -25.0
+volume_db = -48.807

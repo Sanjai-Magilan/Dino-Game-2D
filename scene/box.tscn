@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7dn3y4d7fjp8"]
+
+[ext_resource type="Texture2D" uid="uid://c4wnduwdflcfu" path="res://obstacles/box.png" id="1_h1pwv"]
+
+[node name="box" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("1_h1pwv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1.3, 1.3)
+polygon = PackedVector2Array(-15, 13, -16, -12, 15, -12, 17, 13.5)

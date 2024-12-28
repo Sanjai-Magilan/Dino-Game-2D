@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c15kkobq0448t"]
+
+[ext_resource type="Texture2D" uid="uid://dic5lrta13wg2" path="res://ground/pixil-frame-0.png" id="1_xenio"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhquh"]
+size = Vector2(1216, 32)
+
+[node name="Ground" type="StaticBody2D"]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-688, -2.27374e-13)
+scale = Vector2(2.47917, 1)
+texture = ExtResource("1_xenio")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(608, 200)
+shape = SubResource("RectangleShape2D_vhquh")
