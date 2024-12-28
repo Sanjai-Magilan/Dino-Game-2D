@@ -6,7 +6,7 @@ You know that cute little dinosaur you play with when your Wi-Fi decides to take
 How to Run This Masterpiece:
 
 1.Install Godot
-  Make sure you have Godot 4.3 or any version higher than 4.0. If you don’t, what are you even doing here?
+  Make sure you have Godot 4.3 or higher. If you don’t, what are you even doing here?
 
 2.Clone This Repo
   Get this repository on your system. Do not—I repeat, do not—rename any folders or files unless you enjoy debugging your life away. 
@@ -17,6 +17,5 @@ How to Run This Masterpiece:
 
 
 A Heads-Up About High Scores 🏆
-
 When you first start the game, there’s no fixed high score. It’s a clean slate, waiting for your legendary run. 
 Make it count! (Or just crash immediately—it’s your call.)
