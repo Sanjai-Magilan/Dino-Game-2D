@@ -16,6 +16,6 @@ How to Run This Masterpiece:
   Open the project in Godot, click the play button, and boom—you’re running the game.
 
 
-A Heads-Up About High Scores 🏆
+A Heads-Up About High Scores 🏆 : 
 When you first start the game, there’s no fixed high score. It’s a clean slate, waiting for your legendary run. 
 Make it count! (Or just crash immediately—it’s your call.)
