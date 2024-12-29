@@ -103,7 +103,7 @@ func generate_obs():
 			last_obs = obs
 			add_obs(obs , obs_x, obs_y-170)
 		#bird spwan
-		if difficulty >= 0:#MAX_DIFF:
+		if difficulty == MAX_DIFF:
 			if(randi() % 2) == 0:
 				obs = bird_scene.instantiate()
 				var obs_x : int = screen_size.x + score + 200
