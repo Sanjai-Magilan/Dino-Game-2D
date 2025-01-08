@@ -101,7 +101,7 @@ func generate_obs():
 			var obs_x : int = screen_size.x + score + 100 + (i * 30)
 			var obs_y : int = screen_size.y - ground_height - (obs_height * obs_scale.y / 2) + 5
 			last_obs = obs
-			add_obs(obs , obs_x, obs_y-170)
+			add_obs(obs , obs_x, obs_y-170) #change the "-170" according to your screen size or just remove it
 		#bird spwan
 		if difficulty == MAX_DIFF:
 			if(randi() % 2) == 0:
