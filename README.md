@@ -1,6 +1,8 @@
 # Dino-Game-2D
 A Superior Version of the Google Dinosaur Game 🦖🎮
 
+![Dino Game Screenshot](https://github.com/user-attachments/assets/bac0337f-dc02-4aa6-84b4-e08eb8103f48)
+
 You know that cute little dinosaur you play with when your Wi-Fi decides to take a coffee break? Forget it. This is the next level. Built with a sprinkle of inspiration (and a hefty dose of tutorial-watching), this game is everything you didn’t know you needed. Sure, I followed a tutorial and gave credit where it's due, but hey—small tweaks, big upgrades!
 
 How to Run This Masterpiece:
